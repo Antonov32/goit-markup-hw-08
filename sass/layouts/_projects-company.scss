@@ -1,0 +1,122 @@
+.projects-company {
+  background-color: var(--background-color);
+}
+
+.button-projects {
+  @extend %center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+
+  color: var(--primary-color);
+}
+
+.button-projects__item {
+  margin-right: 8px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.button-projects__name {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
+
+  font-family: "Roboto";
+  font-style: normal;
+  @include font(500, 16px, 1.62, 0.03em);
+  background-color: #f5f4fa;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    outline: 1px dotted;
+  }
+}
+
+.team-projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-projects__work {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: none;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+}
+
+.team-projects__link {
+  display: block;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.team-projects__wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.team-projects__image {
+  display: block;
+  background-color: var(--background-color);
+}
+
+.team-projects__text {
+  @include font(400, 18px, 1.56, 0.03em);
+  color: var(--main-btn-color);
+
+  position: absolute;
+  top: 0;
+  padding: 63px 24px;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .team-projects__work:hover &,
+  .team-projects__work:focus & {
+    transform: translateY(0);
+  }
+}
+
+.team-projects__container {
+  padding: 20px 24px;
+  border-right: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.team-projects__title {
+  margin: 0;
+  margin-bottom: 4px;
+  @include font(null, 18px, 2, 0.06em);
+  color: var(--primary-color);
+}
+
+.team-projects__category {
+  display: inline-block;
+  margin: 0;
+  @include font(null, 16px, 1.88, 0.03em);
+  color: var(--secondary-color);
+}

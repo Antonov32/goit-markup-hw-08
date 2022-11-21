@@ -1,0 +1,7 @@
+.btn {
+  font-family: "Roboto";
+  @include font(700, 16px, 1.88, 0.06em);
+  border: none;
+  color: var(--background-color);
+  background: var(--accent-color);
+}

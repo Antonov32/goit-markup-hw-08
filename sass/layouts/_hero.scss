@@ -1,8 +1,9 @@
 .hero__style {
-  padding: 200px 0;
+  // padding: 200px 0;
+  padding: 118px 60px;
   text-align: center;
   background-color: var(--background-secondary-color);
-  max-width: 1600px;
+  max-width: 480px;
   height: 600px;
   margin: 0 auto;
   background-image: linear-gradient(
@@ -23,6 +24,11 @@
   @include font(900, 44px, 1.36, 0.06em);
   text-transform: uppercase;
   color: var(--background-color);
+
+  @include mobile {
+    max-width: 480px;
+    @include font(null, 26px, 1.62, null);
+  }
 }
 
 .hero__btn {

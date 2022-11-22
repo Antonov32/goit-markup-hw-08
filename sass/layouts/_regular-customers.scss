@@ -4,12 +4,24 @@
 
 .company-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .company-list__item {
-  width: 170px;
+  // width: 170px;
+  width: 100%;
   height: 92px;
+
+  @include mobile {
+    @include calc(2);
+  }
+  @include tablet {
+    @include calc(3);
+  }
+  @include desktop {
+    @include calc(6);
+  }
 }
 
 .company-list__link {

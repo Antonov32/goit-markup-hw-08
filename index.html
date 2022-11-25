@@ -79,14 +79,14 @@
     </header> -->
     <main>
       <!-- Герой -->
-      <section class="hero hero__style">
+      <!-- <section class="hero hero__style">
         <div class="container hero__container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero__btn btn" data-modal-open>
             Замовити послугу
           </button>
         </div>
-      </section>
+      </section> -->
       <!-- Переваги -->
       <!-- <section class="advantages section">
         <div class="container">
@@ -150,6 +150,10 @@
             <li class="pic-list__item">
               <img
                 class="pic-list__picture"
+                srcset="
+                  ./images/web-about-1-min.jpg    1x,
+                  ./images/web-about-1-min-2x.jpg 2x
+                "
                 src="./images/web-about-1-min.jpg"
                 alt="програмує"
                 width="370"
@@ -160,6 +164,10 @@
             <li class="pic-list__item">
               <img
                 class="pic-list__picture"
+                srcset="
+                  ./images/web-about-2-min.jpg    1x,
+                  ./images/web-about-2-min-2x.jpg 2x
+                "
                 src="./images/web-about-2-min.jpg"
                 alt="мобільний додаток"
                 width="370"
@@ -170,6 +178,10 @@
             <li class="pic-list__item">
               <img
                 class="pic-list__picture"
+                srcset="
+                  ./images/web-about-3-min.jpg    1x,
+                  ./images/web-about-3-min-2x.jpg 2x
+                "
                 src="./images/web-about-3-min.jpg"
                 alt="графіка"
                 width="370"
@@ -181,18 +193,41 @@
         </div>
       </section> -->
       <!-- Наша команда -->
-      <!-- <section class="command section">
+      <section class="command section">
         <div class="container">
           <h2 class="command__title section-title">Наша команда</h2>
           <ul class="employees-list list">
             <li class="employees-list__item">
-              <img
-                class="employees-list__picture"
-                src="./images/developer-1-min.jpg"
-                alt="продукт дизайнер"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/developer-1-min-1x.jpg 1x,
+                    ./images/developer-1-min-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/developer-1-min-tablet-1x.jpg 1x,
+                    ./images/developer-1-min-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/developer-1-min-mobile-1x.jpg 1x,
+                    ./images/developer-1-min-mobile-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="employees-list__picture"
+                  src="./images/developer-1-min-1x.jpg"
+                  alt="продукт дизайнер"
+                  width="450"
+                  height="260"
+                />
+              </picture>
               <div class="employees-list__container">
                 <h3 class="employees-list__people">Ігор Дем'яненко</h3>
                 <p lang="en" class="employees-list__position">
@@ -267,13 +302,36 @@
               </div>
             </li>
             <li class="employees-list__item">
-              <img
-                class="employees-list__picture"
-                src="./images/developer-2-min.jpg"
-                alt="фронтенд розробник"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/developer-2-min-1x.jpg 1x,
+                    ./images/developer-2-min-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/developer-2-min-tablet-1x.jpg 1x,
+                    ./images/developer-2-min-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/developer-2-min-mobile-1x.jpg 1x,
+                    ./images/developer-2-min-mobile-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="employees-list__picture"
+                  src="./images/developer-2-min-1x.jpg"
+                  alt="продукт дизайнер"
+                  width="450"
+                  height="260"
+                />
+              </picture>
               <div class="employees-list__container">
                 <h3 class="employees-list__people">Ольга Рєпіна</h3>
                 <p lang="en" class="employees-list__position">
@@ -348,13 +406,36 @@
               </div>
             </li>
             <li class="employees-list__item">
-              <img
-                class="employees-list__picture"
-                src="./images/developer-3-min.jpg"
-                alt="маркетолог"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/developer-3-min-1x.jpg 1x,
+                    ./images/developer-3-min-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/developer-3-min-tablet-1x.jpg 1x,
+                    ./images/developer-3-min-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/developer-3-min-mobile-1x.jpg 1x,
+                    ./images/developer-3-min-mobile-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="employees-list__picture"
+                  src="./images/developer-3-min-1x.jpg"
+                  alt="продукт дизайнер"
+                  width="450"
+                  height="260"
+                />
+              </picture>
               <div class="employees-list__container">
                 <h3 class="employees-list__people">Микола Тарасов</h3>
                 <p lang="en" class="employees-list__position">Marketing</p>
@@ -427,13 +508,36 @@
               </div>
             </li>
             <li class="employees-list__item">
-              <img
-                class="employees-list__picture"
-                src="./images/developer-4-min.jpg"
-                alt="веб дизайнер"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/developer-4-min-1x.jpg 1x,
+                    ./images/developer-4-min-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/developer-4-min-tablet-1x.jpg 1x,
+                    ./images/developer-4-min-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/developer-4-min-mobile-1x.jpg 1x,
+                    ./images/developer-4-min-mobile-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="employees-list__picture"
+                  src="./images/developer-4-min-1x.jpg"
+                  alt="продукт дизайнер"
+                  width="450"
+                  height="260"
+                />
+              </picture>
               <div class="employees-list__container">
                 <h3 class="employees-list__people">Михайло Єрмаков</h3>
                 <p lang="en" class="employees-list__position">UI Designer</p>
@@ -507,7 +611,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Постійні кліенти -->
       <!-- <section class="regular-customers section">
         <div class="container">

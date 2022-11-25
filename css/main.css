@@ -13,7 +13,7 @@
   --modal-btn-color: #188ce8;
 }
 
-.button-projects, .basement-form__btn, .company-list__link, .employees-icons__link, .advantages__card-set, .contact__link, .navigation, .header__wrap, .modal__privacy-text div, .modal__privacy-text, .modal__field-privacy, .modal__close {
+.button-projects, .company-list__link, .employees-icons__link, .advantages__card-set, .contact__link, .navigation, .header__wrap, .modal__privacy-text div, .modal__privacy-text, .modal__field-privacy, .modal__close {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,7 +81,6 @@ address {
 
 img {
   display: block;
-  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -137,8 +136,8 @@ img {
 .section-logo {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--logo-color);
 }
@@ -739,18 +738,48 @@ img {
 
 .basement {
   background-color: var(--background-secondary-color);
+  min-width: 100%;
   padding: 60px 0px;
   align-items: baseline;
 }
+@media screen and (min-width: 768px) {
+  .basement {
+    min-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .basement {
+    min-width: 1200px;
+  }
+}
 
 .basement__wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .basement__wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .basement__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 .address {
-  display: inline-block;
+  display: block;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .address {
+    text-align: left;
+  }
 }
 
 .address__logo {
@@ -763,6 +792,7 @@ img {
 
 .address__wrap {
   margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .contacts-basement__google {
@@ -790,7 +820,12 @@ img {
 }
 
 .basement__social-networks {
-  margin-left: 70px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .basement__social-networks {
+    margin-left: 70px;
+  }
 }
 
 .social-networks__title {
@@ -802,12 +837,24 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--background-color);
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .social-networks__title {
+    text-align: left;
+  }
 }
 
 .social-icons {
   display: flex;
-  justify-items: center;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .social-icons {
+    justify-items: center;
+  }
 }
 
 .social-icons__link {
@@ -826,8 +873,10 @@ img {
   outline: 0px;
 }
 
-.basement__mailing {
-  margin-left: 93px;
+@media screen and (min-width: 1200px) {
+  .basement__mailing {
+    margin-left: 93px;
+  }
 }
 
 .mailing__title {
@@ -837,15 +886,27 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--background-color);
+}
+@media screen and (min-width: 1200px) {
+  .mailing__title {
+    text-align: left;
+  }
 }
 
 .basement-form {
-  display: flex;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .basement-form {
+    display: flex;
+  }
 }
 
 .basement-form__input {
-  min-width: 358px;
+  margin-bottom: 20px;
+  width: 100%;
   height: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -869,14 +930,26 @@ img {
 .basement-form__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (min-width: 1200px) {
+  .basement-form__input {
+    width: 358px;
+  }
+}
 
 .basement-form__btn {
   width: 200px;
   height: 50px;
-  margin-left: 12px;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 29px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .basement-form__btn {
+    margin-left: 12px;
+  }
 }
 .basement-form__btn:hover, .basement-form__btn:focus {
   background-color: var(--modal-btn-color);
@@ -884,9 +957,13 @@ img {
 }
 
 .basement-form__icon {
-  align-items: center;
   margin-left: 10px;
   fill: var(--background-color);
+}
+@media screen and (min-width: 1200px) {
+  .basement-form__icon {
+    align-items: center;
+  }
 }
 
 .projects-company {

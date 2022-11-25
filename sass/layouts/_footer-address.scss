@@ -1,17 +1,40 @@
 .basement {
   background-color: var(--background-secondary-color);
+  min-width: 100%;
   padding: 60px 0px;
   align-items: baseline;
+
+  @include tablet {
+    min-width: 768px;
+  }
+  @include desktop {
+    min-width: 1200px;
+  }
 }
 
 .basement__wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  justify-content: center;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 .address {
-  display: inline-block;
+  display: block;
+  text-align: center;
+
+  @include desktop {
+    text-align: left;
+  }
 }
 
 .address__logo {
@@ -24,6 +47,7 @@
 
 .address__wrap {
   margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .contacts-basement__google {

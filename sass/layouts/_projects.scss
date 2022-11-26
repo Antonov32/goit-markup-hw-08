@@ -1,5 +1,11 @@
 .projects {
   padding-top: 0;
+  @include mobile {
+    display: none;
+    @include desktop {
+      display: block;
+    }
+  }
 }
 
 .projects__title {

@@ -147,6 +147,10 @@
   margin-bottom: 4px;
   @include font(null, 18px, 2, 0.06em);
   color: var(--primary-color);
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .team-projects__category {

@@ -1004,5 +1004,12 @@
     <!-- JS -->
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script>
+      const { height: HeaderHeight } = document
+        .querySelector(".header")
+        .getBoundingClientRect();
+
+      document.body.style.paddingTop = `${HeaderHeight}px`;
+    </script>
   </body>
 </html>

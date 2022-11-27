@@ -17,7 +17,7 @@
   );
 }
 
-.button-projects, .company-list__link, .employees-icons__link, .advantages__card-set, .navigation, .header__wrap, .mobile-close, .modal__privacy-text div, .modal__privacy-text, .modal__field-privacy, .modal__close {
+.company-list__link, .employees-icons__link, .advantages__card-set, .navigation, .header__wrap, .mobile-close, .modal__privacy-text div, .modal__privacy-text, .modal__field-privacy, .modal__close {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1184,20 +1184,30 @@ img {
 }
 
 .button-projects {
+  display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   color: var(--primary-color);
+}
+@media screen and (min-width: 768px) {
+  .button-projects {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+  }
 }
 
 .button-projects__item {
+  margin-bottom: 15px;
   margin-right: 8px;
 }
 .button-projects__item:last-child {
   margin-right: 0px;
+  margin-bottom: 0;
 }
 
 .button-projects__name {
-  padding: 6px 22px;
+  padding: 6px 25px;
   border-radius: 4px;
   border: none;
   font-family: "Roboto";
@@ -1215,22 +1225,37 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   outline: 1px dotted;
 }
+@media screen and (min-width: 768px) {
+  .button-projects__name {
+    padding: 6px 22px;
+  }
+}
 
-.team-projects {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .team-projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .team-projects__work {
-  margin-right: 30px;
-  margin-bottom: 30px;
   border: none;
 }
-.team-projects__work:nth-child(3n) {
-  margin-right: 0;
+@media screen and (min-width: 320px) {
+  .team-projects__work {
+    width: calc((100% - 0px) / 1);
+  }
 }
-.team-projects__work:nth-last-child(-n+3) {
-  margin-bottom: 0;
+@media screen and (min-width: 768px) {
+  .team-projects__work {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-projects__work {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .team-projects__link {

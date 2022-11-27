@@ -132,9 +132,9 @@ img {
 }
 
 .logo {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  margin-right: auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .section-logo {
@@ -389,6 +389,7 @@ img {
 }
 
 .mobile-menu-btn {
+  padding: 0;
   margin-left: auto;
   background-color: transparent;
   border: none;

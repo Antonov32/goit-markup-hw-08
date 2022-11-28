@@ -1,6 +1,10 @@
-.basement__social-networks {
-  margin-bottom: 60px;
+.social-networks {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
 
+.basement__social-networks {
   @include desktop {
     margin-left: 70px;
   }

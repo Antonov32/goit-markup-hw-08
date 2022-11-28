@@ -435,6 +435,11 @@ img {
   justify-content: space-between;
   overflow: auto;
 }
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
 
 .mobile-menu-nav__item:not(:last-child) {
   margin-bottom: 32px;
@@ -469,6 +474,14 @@ img {
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .mobile-contact__tel {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+  }
+}
 
 .mobile-contact__mail {
   font-weight: 500;
@@ -476,6 +489,14 @@ img {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .mobile-contact__mail {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.27;
+    letter-spacing: 0.02em;
+  }
 }
 
 .mobile-social {
@@ -495,6 +516,14 @@ img {
   letter-spacing: 0.02em;
   color: var(--accent-color);
   text-decoration: none;
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .mobile-social__link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.02em;
+  }
 }
 
 .mobile-close {
@@ -1010,7 +1039,7 @@ img {
   display: block;
   text-align: center;
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .address {
     margin-bottom: 60px;
   }
@@ -1057,7 +1086,7 @@ img {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .social-networks {
     margin-bottom: 60px;
   }
@@ -1170,7 +1199,7 @@ img {
 .basement-form__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .basement-form__input {
     margin-bottom: 20px;
   }

@@ -547,6 +547,10 @@ img {
 }
 
 .header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
   background-color: var(--background-color);
   border: 1px solid var(--background-portfolio-color);
 }
